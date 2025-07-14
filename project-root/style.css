@@ -1,0 +1,250 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex; /* Organiza el sidebar y el contenido principal en una fila */
+    height: 100vh; /* Asegura que el contenido ocupe toda la altura */
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #e4aff0;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100vh; /* Asegura que el sidebar ocupe toda la altura */
+    position: fixed; /* Fija el sidebar al lado izquierdo */
+    top: 0;
+    left: 0;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sidebar p {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.sidebar button {
+    display: block;
+    margin: 20px auto;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.sidebar button:hover {
+    background-color: #c82333;
+}
+
+/* Contenedor principal */
+.main-content {
+    margin-left: 470px; /* Aumenta el margen izquierdo para mover las tablas más a la derecha */
+    padding: 20px;
+    flex: 1; /* Asegura que el contenido principal ocupe el espacio restante */
+    overflow-y: auto; /* Permite el scroll si el contenido es demasiado grande */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #444;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+button.inscribeBtn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button.inscribeBtn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button.inscribeBtn:hover {
+    background-color: #218838;
+}
+
+div#inscriptionsList {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la foto de perfil */
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Ajusta la imagen dentro del círculo */
+    border: 3px solid white; /* Agrega un borde blanco alrededor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
+}
+
+/* Estilo para el contenedor del login */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    padding: 20px;
+}
+
+.login-container h1, .login-container h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Espaciado entre formularios */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contenedor principal del admin */
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background: linear-gradient(135deg, #007BFF, #0056b3); /* Fondo degradado */
+    padding: 40px; /* Espaciado adicional */
+}
+
+.admin-container h1 {
+    font-size: 3rem; /* Título más grande */
+    color: #fff; /* Texto blanco */
+    margin-bottom: 40px; /* Más espacio debajo del título */
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra en el texto */
+}
+
+.admin-actions {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se ajusten si hay poco espacio */
+    gap: 20px; /* Espaciado entre los botones */
+    justify-content: center;
+}
+
+.admin-actions button {
+    padding: 15px 30px; /* Más espacio interno */
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 1.2rem; /* Texto más grande */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animaciones */
+}
+
+.admin-actions button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Efecto de escala */
+}
+
+.admin-actions button:active {
+    transform: scale(0.95); /* Efecto de clic */
+}

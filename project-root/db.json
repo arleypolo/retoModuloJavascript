@@ -1,0 +1,60 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "user": "admin",
+      "password": "admin123",
+      "role": "admin",
+      "inscripciones": []
+    },
+    {
+      "id": "2",
+      "user": "user1",
+      "password": "user123",
+      "role": "user",
+      "inscripciones": [
+        "102f",
+        "f0c1",
+        "dad3",
+        "7f1f"
+      ]
+    },
+    {
+      "id": "3",
+      "user": "testuser",
+      "password": "testpass",
+      "role": "user",
+      "inscripciones": []
+    }
+  ],
+  "eventos": [
+    {
+      "id": "102f",
+      "name": "Typescript",
+      "description": "Evento para aprender Javascript",
+      "capacity": 2,
+      "date": "2025-07-14"
+    },
+    {
+      "id": "dad3",
+      "name": "Javascript",
+      "description": "Aprender Javascript",
+      "capacity": 1,
+      "date": "2025-07-14"
+    },
+    {
+      "id": "7f1f",
+      "name": "NodeJs",
+      "description": "Nodejs",
+      "capacity": 1,
+      "date": "2025-07-14"
+    },
+    {
+      "id": "95e6",
+      "name": "Nodejs",
+      "description": "2",
+      "capacity": 2,
+      "date": "2025-07-14"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Disponibles</title>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Información del Usuario</h2>
+        <div class="profile-picture">
+            <img src="../images/sobremi.jpeg" alt="Foto de perfil">
+        </div>
+        <p id="userRole">Rol: Usuario</p>
+        <p id="userName">Nombre: John Doe</p>
+        <button id="logoutBtn">Cerrar Sesión</button>
+    </div>
+    <div class="main-content">
+        <h1>Eventos Disponibles</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Capacidad</th>
+                    <th>Fecha</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="eventList">
+                <!-- Los eventos se cargarán dinámicamente aquí -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
